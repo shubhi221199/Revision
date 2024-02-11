@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div:last-of-type {
+        background-color: aqua;
+      } */
+      input[type="submit"] {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form>
+      <label for="email"> Email </label>
+      <input autocapitalize="on" type="email" id="email" />
+
+      <label for="password"> password </label>
+      <input id="password" type="text" autocomplete="email" />
+
+      <div><input type="submit" /></div>
+      
+    </form> -->
+    <!-- <form>
+      <input type="text" autocomplete="email" name="email" />
+      <input type="text" autocomplete="on" name="dxfcgvhb" />
+      <input type="text" autocomplete="address-level1" />
+      <input type="text" autocomplete="address-level1" />
+      <input type="datetime" />
+    </form> -->
+
+    <h1>Form-1</h1>
+    <form action="">
+      <fieldset>
+        <legend>Choose gender</legend>
+        <label for="">male</label>
+        <input type="radio" name="gender" />
+        <label for="">Female</label>
+        <input type="radio" name="gender" />
+        <label for="">other</label>
+        <input name="gender" type="radio" /><br /><br />
+        <label for="">Time</label>
+        <input type="datetime-local" /><br /><br />
+        <label for="">Week</label>
+        <input type="week" /><br /><br />
+        <label for="">Reset</label>
+        <input type="reset" /><br /><br />
+        <label for="">month</label>
+        <input type="month" /><br /><br />
+        <label for="">hidden</label>
+        <input type="hidden" value="abcd" /><br /><br />
+        <label for="">color</label>
+        <input type="color" /><br /><br />
+        <label for="">url</label>
+        <input type="url" name="url" /><br /><br />
+        <label for="">Date</label>
+        <input type="date" name="url" /><br /><br />
+        <label for="">Multiple email</label>
+        <input type="email" multiple name="emails" id="emails" />
+        <br /><br />
+        <label for="">Multiple File</label>
+        <input type="file" multiple name="files" id="files" /><br /><br />
+        <label for="age">Age:</label>
+        <input
+          id="age"
+          name="age"
+          type="number"
+          value="42"
+          readonly
+        /><br /><br />
+        <label for="age">Step</label>
+        <input type="number" step="2" max="10" min="5" />
+        <label>Checkbox</label>
+        <input type="checkbox" />
+      </fieldset>
+    </form>
+    <h1>Form -2</h1>
+    <form action="">
+      <label id="selectId">Choose your snack:</label>
+      <select id="selectId" multiple>
+        <option value="maggi">Maggi</option>
+        <option value="kurkure">Kurkure</option>
+        <option value="chips">Chips</option>
+      </select>
+      <br /><br />
+      <label>TextArea</label>
+      <textarea rows="10" cols="30" placeholder="xyz......."></textarea>
+    </form>
+    <h1>Form -3</h1>
+    <form action="">
+      <label for="emails">Who do you want to email?</label>
+      <input
+        type="email"
+        multiple
+        name="emails"
+        id="emails"
+        list="dwarf-emails"
+        required
+        size="35"
+      />
+      <datalist id="dwarf-emails">
+        <option value="grumpy@woodworkers.com">Grumpy</option>
+        <option value="happy@woodworkers.com">Happy</option>
+        <option value="sleepy@woodworkers.com">Sleepy</option>
+        <option value="bashful@woodworkers.com">Bashful</option>
+        <option value="sneezy@woodworkers.com">Sneezy</option>
+        <option value="dopey@woodworkers.com">Dopey</option>
+        <option value="doc@woodworkers.com">Doc</option>
+      </datalist>
+    </form>
+
+    <h1>form - 4</h1>
+    <form action="">
+      <label for="username">Username: (3-16 characters)</label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        value=""
+        pattern="\w{3,16}"
+        required
+      />
+
+      <label for="pin">PIN: (4 digits)</label>
+      <input id="pin" name="pin" type="password" pattern="\d{0,6}" required />
+      <input type="submit" />
+    </form>
+    <h1>Event Registration!</h1>
+    <fieldset>
+      <legend>Event Registration!</legend>
+      <form action="">
+        <lable>Name : </lable><input type="text" /> <br /><br />
+        <lable>Email : </lable><input type="email" /> <br /><br />
+        <lable>Phone No : </lable><input type="tel" /><br />
+        <br />
+        <label for="Occupation">Occupation</label>
+        <select name="" id="Occupation" >
+          <option value="none" >None</option>
+          <option value="teacher">Teacher</option>
+          <option value="developer" selected disabled>Developer</option>
+          <option value="HR">Hr</option></select
+        ><br /><br />
+        <label for="">Topics of Intrest</label>
+        <input type="checkbox" value="HTML" /><br />
+        <label for="">HTML</label><br />
+        <input type="checkbox" value="JS" /> <br />
+        JS <br /><input type="checkbox" value="CSS" /><br />
+        <label for="">CSS </label> <br /><br />
+
+        <fieldset>
+          <legend>choose Gender</legend>
+          <input type="radio" name="gender" />male <br />
+          <input type="radio" id="female" name="gender" />Female <br />
+          <input type="radio" name="gender" />Other
+        </fieldset>
+        <br />
+        <textarea name="Comments" id="" cols="30" rows="10"></textarea><br />
+        <input type="submit" value="Registration" />
+      </form>
+    </fieldset>
+  </body>
+</html>
