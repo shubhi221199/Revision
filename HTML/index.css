@@ -1,3 +1,48 @@
 body {
-    color: blue;
+    color
+    : blue;
 }
+
+:root{
+    font-size:20px;
+  }
+  body {
+    --color:green;
+  }
+  .b{
+    color:aqua;
+    font-size:200px;
+    background:var(--shubhi);
+    
+  }
+  .a{
+    font-size:10px;
+  }
+  .c{
+    font-size:1em;
+  }
+  div{
+    background:pink;
+  }
+  div:hover > h1:nth-child(2) {
+    color:red;
+    transform: rotate(180deg);
+ 
+  }
+  h1{
+    display:inline-block;
+    padding:0;
+    margin:0;
+  }
+  h1:hover {
+    transform: rotate(180deg);
+  }
+  
+  
+  ul li:nth-child(2n+3){
+    color:red;
+  }
+  
+  input:blank {
+    background:red;
+  }
